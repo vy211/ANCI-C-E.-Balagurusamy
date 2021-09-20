@@ -7,9 +7,9 @@ int main()
 {
     static int ang;
     printf("x(degrees)\tsin(x)\tcos(x)\n");
-    while(ang==180)
+    while(ang!=180)
     {
-        printf("%d\t%f\t%f",ang,sin(ang),cos(ang));
+        printf("%d\t%f\t%f\n",ang,sin(ang),cos(ang));
         ang+=15;
     }
     return 0;
